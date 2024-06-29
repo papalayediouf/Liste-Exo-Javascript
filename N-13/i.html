@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 13</title>
+</head>
+<body>
+    <h1>Exo 13</h1>
+    <script>
+        // Ecrire un boucle qui affiche tous les nombres pairs  de 0 à 20 dans la console
+        for (let i = 0; i <= 20; i += 2) {
+        console.log(i);
+    }
+
+//_________________________________________________________________________________________
+
+//Ecrire une boucle qui parcourt un tableau  de nombres et affiche dans la console les nombres impairs 
+
+function afficherNombresImpairs(tableau) {
+    for (let i = 0; i < tableau.length; i++) {
+        if (tableau[i] % 2 !== 0) {
+            console.log(tableau[i]);
+        }
+    }
+}
+
+// Exemple d'utilisation :
+const tableauDeNombres = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+afficherNombresImpairs(tableauDeNombres);
+
+
+    </script>
+</body>
+</html>

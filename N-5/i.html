@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 5</title>
+</head>
+<body>
+    <h1>Exo 5</h1>
+    <script>
+ // Ecrire un programme  qui demande à l'utilisateur  de saisir une lettre et 
+ // si cette lettre est une voyelle ou une consonne
+
+ // Demander à l'utilisateur de saisir une lettre
+let lettre = prompt("Entrez une lettre :");
+// lettre.toLowerCase()
+// console.log(lettre ) 
+
+
+// Vérifier si la lettre est une voyelle
+if (lettre ==='a' || lettre ==='e' || lettre ==='i' || lettre ==='o' || lettre ==='u' || lettre ==='y') {
+    console.log(`La lettre "${lettre}" est une voyelle.`);
+}else if (lettre ==='A' || lettre ==='E' || lettre ==='I' || lettre ==='O' || lettre ==='U' || lettre ==='y') {
+    console.log(`La lettre "${lettre}" est une voyelle.`);
+}
+else if (lettre >= 'a' && lettre <= 'z') { 
+    console.log(`La lettre "${lettre}" est une consonne.`);
+}else if (lettre >= 'A' && lettre <= 'Z') { 
+    console.log(`La lettre "${lettre}" est une consonne.`);
+}
+ else {
+    console.log(`"${lettre}" n'est pas une lettre valide.`);
+}
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 11</title>
+</head>
+<body>
+    <h1>Exo 11</h1>
+    <script>
+        // Ecrire une fonction qui prend en entrée deux tableaux de nombre de même
+        // longueur et renvoie un nouveau tableau qui contient la somme des elements
+        // de chaque tableau
+
+ function sommeTableaux(tab1, tab2) {
+ 
+   
+    let resultat = [];
+
+    
+    for (let i = 0; i < tab1.length; i++) {
+        let somme = tab1[i] + tab2[i];
+        resultat.push(somme);
+    }
+
+    
+    return resultat;
+}
+
+let tableau1 = [1, 2, 3, 4];
+let tableau2 = [5, 6, 7, 8];
+
+
+    let resultat = sommeTableaux(tableau1, tableau2);
+    console.log("Résultat de la somme des tableaux :", resultat);
+
+//_________________________________________________________________________________________________________________________________________
+
+// Ecrire une fonction qui prend en entrée un tableau de chaînes de caracteres et 
+// renvoie un nouveau tableau qui contient la longueur de chaque chaîne
+
+function longueursChaines(tableau) {
+    
+    let longueurs = [];
+    
+
+    for (let i = 0; i < tableau.length; i++) {
+
+        longueurs.push(tableau[i].length);
+    }
+    
+  
+    return longueurs;
+}
+
+
+const tableauDeChaines = [ "Bonjour", "comment ", "ça", "va"];
+const resultats = longueursChaines(tableauDeChaines);
+console.log(resultats); 
+
+
+
+    </script>
+</body>
+</html>

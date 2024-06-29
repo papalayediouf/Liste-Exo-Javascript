@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 3</title>
+</head>
+<body>
+    <h1>Exo 3</h1>
+    <script>
+    // Ecrire  programme qui demande à l'utilisateur de saisir un nombre et affiche si ce
+    // nombre est paire ou impair.   
+    
+    
+    const nombre = parseFloat((prompt("Veuillez saisir un nombre :")));
+
+
+    if (isNaN(nombre)){
+        alert("Entre un nombre Valide")
+    }
+    else if (nombre % 2 === 0) {
+        alert(nombre + " est un nombre pair.");
+    }else if(nombre % 2 !== 0) {
+        alert(nombre + " est un nombre impair.");
+    };
+
+    </script>
+</body>
+</html>

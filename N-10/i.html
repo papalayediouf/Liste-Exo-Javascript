@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 10</title>
+</head>
+<body>
+    <h1>Exo 10</h1>
+    <script>
+        // Ecrire  programme qui demande à l'utilisateur de saisir deux nombre et les compare
+        // puis affiche un message indiquant si le premier nombre est plus grand ,
+        // plus petit ou egaal au deuxieme nombre 
+
+        const nombre1 = parseFloat(prompt("Entrez le premier nombre:"));
+        const nombre2 = parseFloat(prompt("Entrez le dexieme nombre:"));
+
+        if (nombre1 > nombre2){
+            alert(`nombre1 est plus grand que nombre 2 `);
+        }else if (nombre1 < nombre2){
+            alert(`nombre1 est plus petit que nombre 2 `);
+
+        }else if(nombre1 === nombre2){
+            alert(`nombre1 est egal a nombre 2 `);
+        }
+        else{
+            alert(`Veuillez entrer un nombre`);
+        };
+
+    </script>
+</body>
+</html>

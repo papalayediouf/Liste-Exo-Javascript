@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 8</title>
+</head>
+<body>
+    <h1>Exo 8</h1>
+
+<script>
+    // Ecrire un programme qui demande à l'utilisateur de saisir son age
+    // et le nombre de jour qu'il souhaite vivre , puis affiche l'année où
+    // il aura atteint cet age
+
+
+    // Nombre d'age
+    let age = parseInt(prompt("Entrez votre âge actuel :"));
+    console.log("age est: " +  age)
+
+    // Nombre de jour que vous souhaitez vivre
+    let joursAvivre = parseInt(prompt("Entrez le nombre de jours que vous souhaitez vivre :"));
+    console.log("Jour a Vivre est: " + joursAvivre)
+
+    let anneeAvivre = joursAvivre / 365
+    console.log("annee a vivre", anneeAvivre);
+
+    let date = new Date()
+    date.getFullYear()
+    document.write("Tu Vivra jusqu\'a "  , parseInt(  date.getFullYear()+ anneeAvivre ));
+
+
+</script>    
+</body>
+</html>

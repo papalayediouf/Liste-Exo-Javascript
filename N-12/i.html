@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 12</title>
+</head>
+<body>
+    <h1>Exo 12</h1>
+    <script>
+        // Ecrire une fonction qui prend entrée un nombre et renvoie un tableau
+        // contenant tous les nombre premiers inferieur à ce nombre
+
+        function nombresPremiersInferieurs(nombre) {
+    let nombresPremiers = [];
+
+    // Vérifier chaque nombre de 2 à nombre-1
+    for (let i = 2; i < nombre; i++) {
+        if (estPremier(i)) {
+            nombresPremiers.push(i);
+        }
+    }
+
+    return nombresPremiers;
+}
+
+// Fonction pour vérifier si un nombre est premier
+function estPremier(n) {
+    if (n <= 1) return false; // Les nombres négatifs, 0 et 1 ne sont pas premiers
+
+    // Vérifier pour les nombres de 2 à la racine carrée de n
+    for (let i = 2; i <= Math.sqrt(n); i++) {
+        if (n % i === 0) {
+            return false; // Si n est divisible par i, n n'est pas premier
+        }
+    }
+    
+    return true; // Si aucun diviseur n'est trouvé, n est premier
+}
+
+// Exemple d'utilisation :
+const nombreLimite = 20;
+const premiers = nombresPremiersInferieurs(nombreLimite);
+console.log(premiers); // Affiche : [2, 3, 5, 7, 11, 13, 17, 19]
+
+
+    </script>
+</body>
+</html>

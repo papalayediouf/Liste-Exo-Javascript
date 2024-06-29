@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 9</title>
+</head>
+<body>
+    <h1>Exo 9</h1>
+<script>
+    // Ecrire n programme qui demannde à lutilisateur de saisir un nombre et 
+    // calcule sa factorielle
+
+    // Demander à l'utilisateur de saisir un nombre
+    let nombre = parseInt(prompt("Entrez un nombre pour calculer sa factorielle :"));
+
+    // Vérifier si l'utilisateur a saisi un nombre valide
+    if ((nombre) && nombre >= 0) {
+    // Calculer la factorielle du nombre
+    let factorielle = 1;
+    for (let i = 1; i <= nombre; i++) {
+        factorielle *= i;
+        console.log(i)
+    }
+
+    // Afficher le résultat
+    document.write(`La factorielle de ${nombre} est : ${factorielle}`);
+    alert(`La factorielle de ${nombre} est : ${factorielle}`);
+    } else {
+       alert("Vous devez saisir un nombre entier positif. ");
+    }
+ 
+</script>    
+</body>
+</html>
